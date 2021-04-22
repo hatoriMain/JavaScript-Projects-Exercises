@@ -20,3 +20,5 @@ When one player roll his dice, the points will be added to the current points un
 When player roll the 'one', the current points will be reset and the player will be switched.
 When player pressed the 'hold' button, the current point will be added to the total points and the player will be switched.
 The player who first reached 100 points will win the game.
+
+Fully understood how to change the states and appearences of webpages through doing basic DOM Manipulations and write event handlers.
