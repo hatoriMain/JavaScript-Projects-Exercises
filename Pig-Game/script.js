@@ -40,7 +40,14 @@ btnRoll.addEventListener('click', function () {
       `current--${activePlayer}`
     ).textContent = currentScore;
     //Switch to next player
+    console.log(document.querySelector(`.player--${activePlayer}`));
+    document
+      .querySelector(`.player--${activePlayer}`)
+      .classList.remove('player--active');
     activePlayer = activePlayer === 0 ? 1 : 0;
+    document
+      .querySelector(`.player--${activePlayer}`)
+      .classList.add('player--active');
   }
 });
 
@@ -52,9 +59,17 @@ btnHold.addEventListener('click', function () {
   document.getElementById(
     `current--${activePlayer}`
   ).textContent = currentScore;
+  console.log(document.querySelector(`.player--${activePlayer}`));
+  document
+    .querySelector(`.player--${activePlayer}`)
+    .classList.remove('player--active');
   if (scores[activePlayer] >= 100)
     document.getElementById(`name--${activePlayer}`).textContent = '🥳You Win!';
+
   activePlayer = activePlayer === 0 ? 1 : 0;
+  document
+    .querySelector(`.player--${activePlayer}`)
+    .classList.add('player--active');
 });
 
 btnNew.addEventListener('click', function () {
