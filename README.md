@@ -13,9 +13,9 @@ Implemented a model window.
 By adding and removing classes to change the appearence of UI styles.  
 Learned how to work with classes and listen for keyboard events.  
 
-## Pig-Games
+## Pig-Game
 
-Two players will roll their dices. 
+Two players will roll their dices.  
 When one player roll his dice, the points will be added to the current points unless the dice is one.  
 When player roll the 'one', the current points will be reset and the player will be switched.  
 When player pressed the 'hold' button, the current point will be added to the total points and the player will be switched.
